@@ -1,0 +1,238 @@
+body {
+	background: #313038 url(images/fond1.jpg);
+    background-size: 100%;
+	font-size: 16px;
+	font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #26446e;
+    color: lightgray;   
+}
+
+#header {
+    font-size: 2em;
+}
+
+#titre_page {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #f7483b, #26446e);
+    border-bottom: 1px solid;
+    width: 100%;
+    padding-left: 20px;
+}
+
+#barre {
+    position: absolute;
+    top: -25px;
+}
+
+#menu {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+header li a::before {
+    content:" ▷ ";
+}
+
+header li a:hover {
+    border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+
+}
+
+header li a:hover::before {
+    content:" ▶ ";
+}
+
+#copyright {
+    font-size: 0.4em;
+    position:absolute;
+    right: 10px;
+    top: 100px;
+}
+
+.ligne_haut {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #26446e;
+    position: fixed;
+}
+#connexion {
+    position: fixed;
+    right: 0;
+    top: -10px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: #26446e;
+}
+
+#connexion li:hover {
+    border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+}
+
+#connexion ul {
+    margin: 15px -10px 5px -25px;
+    list-style: none;
+}
+#connexion ul > a {
+    padding-right: 25px;
+}
+
+#ecart{
+    padding-top: 1000px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align:justify;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-card-back {
+    background: linear-gradient(to top, #f7483b79, #26446e79, #26446e79);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.separation_texte {
+    padding: 15px;
+}
+
+#description {
+    text-align: justify;
+    top: 300px;
+    left: 500px;
+    position: absolute;
+    right: 500px;
+    font-size: 1.25em;
+    color: lightgray;
+    border: 1px lightgray solid;
+    border-radius: 25px;
+}
+#description h2 {
+    color: #26446e;
+    padding-left: 25px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #f7483b, #26446e00);
+    border-bottom: 1px solid;
+}
+#description p {
+    padding: 5px 25px 0px 25px;
+}
+
+.centre {
+    
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #26446e;
+    color: lightgray; 
+}
+
+
+.btnPopup{
+background: #26446e;
+padding: 1em 2em;
+cursor: pointer;
+}
+
+.btnPopupCon{
+background: #26446e;
+border-color: #26446e00;
+border-style: none;
+}
+
+
+.btnPopup:hover{
+background-color: rgb(192, 192, 192);}
+
+.overlay {
+position: fixed;
+left: 0px;
+top:0px;
+background-color: rgba(0,0 ,0 , 0.5);
+width: 100%;
+height: 100%;
+z-index:1;
+display:none;
+}
+
+.popup{
+margin: 10% auto;
+width : 20%;
+background-color: rgb(243, 243, 243);
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+}
+
+.popup-header{
+background-color: #26446e;
+color: lightgray;
+padding: 1em;
+text-align: center;
+}
+.popup-corps{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.btnClose {
+float: right;
+font-size:16pt;
+cursor: pointer;
+color: rgb(26, 26, 26);
+}
+
